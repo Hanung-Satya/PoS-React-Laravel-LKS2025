@@ -2,8 +2,8 @@
 
 # 🧾 PoS React + Laravel (LKS 2025)
 
-Sistem **Point of Sale (PoS)** berbasis web yang dibangun menggunakan **React (Vite)** sebagai frontend dan **Laravel 12 + Sanctum** sebagai backend API.
-Project ini dirancang sebagai simulasi aplikasi kasir modern untuk kebutuhan kompetisi **LKS Web Technologies 2025**.
+A web-based **Point of Sale (PoS)** system built using **React (Vite)** as the frontend and **Laravel 12 + Sanctum** as the backend API.
+This project is designed as a modern cashier application simulation for the **LKS Web Technologies 2025** competition.
 
 ---
 
@@ -25,7 +25,7 @@ Project ini dirancang sebagai simulasi aplikasi kasir modern untuk kebutuhan kom
 
 ---
 
-## 📁 Struktur Project
+## 📁 Project Structure
 
 ```
 PoS-React-Laravel-LKS2025/
@@ -38,18 +38,18 @@ PoS-React-Laravel-LKS2025/
 
 ## 🔐 Authentication Flow
 
-Project ini menggunakan **Laravel Sanctum SPA Authentication** (session-based, bukan JWT).
+This project uses **Laravel Sanctum SPA Authentication** (session-based, not JWT).
 
-Alur login:
+Login flow:
 
-1. React request CSRF cookie dari `/sanctum/csrf-cookie`
-2. React kirim login ke `/api/login`
-3. Laravel membuat session cookie
-4. Semua request dilindungi middleware `auth:sanctum`
+1. React requests CSRF cookie from `/sanctum/csrf-cookie`
+2. React sends login data to `/api/login`
+3. Laravel creates a session cookie
+4. All protected routes use `auth:sanctum` middleware
 
 ---
 
-## ⚙️ Cara Menjalankan Project
+## ⚙️ How to Run the Project
 
 ### 1. Clone Repository
 
@@ -69,7 +69,7 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-Edit `.env` database:
+Edit database configuration in `.env`:
 
 ```env
 DB_DATABASE=pos_lks
@@ -77,14 +77,14 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-Lanjut:
+Then run:
 
 ```bash
 php artisan migrate
 php artisan serve
 ```
 
-Backend jalan di:
+Backend runs at:
 
 ```
 http://localhost:8000
@@ -100,7 +100,7 @@ npm install
 npm run dev
 ```
 
-Frontend jalan di:
+Frontend runs at:
 
 ```
 http://localhost:5173
@@ -108,9 +108,9 @@ http://localhost:5173
 
 ---
 
-## 🌐 Sanctum & CORS Configuration (WAJIB)
+## 🌐 Sanctum & CORS Configuration (IMPORTANT)
 
-Pastikan di backend:
+Make sure backend configuration:
 
 ### `.env`
 
@@ -129,25 +129,25 @@ SESSION_DOMAIN=localhost
 
 ---
 
-## 📌 Fitur Utama
+## 📌 Main Features
 
-* Login & Logout (Sanctum)
-* Dashboard Kasir
-* Manajemen Produk
-* Kategori Produk
-* Transaksi Penjualan
-* Keranjang (Cart)
-* Laporan Penjualan
-* Role Admin
+* Login & Logout with Sanctum
+* Cashier Dashboard
+* Product Management
+* Product Categories
+* Sales Transactions
+* Shopping Cart
+* Sales Reports
+* Admin Role Management
 
 ---
 
-## 🎯 Tujuan Project
+## 🎯 Project Purpose
 
-* Latihan fullstack React + Laravel
-* Simulasi sistem kasir modern
-* Persiapan kompetisi LKS Web Technologies
-* Implementasi autentikasi SPA profesional menggunakan Sanctum
+* Fullstack practice using React & Laravel
+* Simulating a modern POS system
+* Preparation for LKS Web Technologies competition
+* Implementing professional SPA authentication with Sanctum
 
 ---
 
@@ -155,12 +155,12 @@ SESSION_DOMAIN=localhost
 
 **Hanung Satya Adi Wicaksono**
 SMK Negeri 2 Surakarta
-Bidang: Pengembangan Perangkat Lunak dan Gim (PPLG)
+Major: Software Engineering (PPLG)
 
 ---
 
 ## 📜 License
 
-Project ini dibuat untuk kebutuhan pembelajaran dan kompetisi.
+This project is created for learning and competition purposes.
 
 ---

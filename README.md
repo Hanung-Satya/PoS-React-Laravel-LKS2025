@@ -153,9 +153,9 @@ SESSION_DOMAIN=localhost
 
 ## 👨‍💻 Developer
 
-**Hanung Satya Adi Wicaksono**
-SMK Negeri 2 Surakarta
-Major: Software Engineering (PPLG)
+* **Hanung Satya Adi Wicaksono**
+* SMK Negeri 2 Surakarta
+* Major: Software Engineering (PPLG)
 
 ---
 
